@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.wch'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies{
+    compile files("lib/btrace-agent.jar","lib/btrace-boot.jar","lib/btrace-client.jar")
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
